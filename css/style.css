@@ -4,8 +4,8 @@ body{
 .header{
     background-color: black;
     /* position: fixed;
-    top: 0; */
-    
+    top: 0;
+     */
 }
 /*
 .main{
@@ -120,9 +120,9 @@ body{
 }
 
 #login-canvas{
-    width: auto;
+    /* width: auto;
     height: 500px;
-    background-color: rgb(214, 196, 196);
+    background-color: rgb(214, 196, 196); */
     background-image: url("../Images/tool.jpg");
     padding-bottom: -100px;
 }
@@ -195,7 +195,7 @@ img{
 
 .footer{
     background-color: rgb(53, 52, 52);
-    /* margin-top: px; */
+    margin-top: 50px;
 }
 
 

@@ -84,8 +84,6 @@
                   </form>
                   <!-- Search Box End -->
 
-                  <div style="margin-left: 180px;"></div>
-                  
                   <ul
                     class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end"
                   >
@@ -126,15 +124,15 @@
           
       <!-- Register Start-->
 
-      <section class="gradient-custom" id="register-canvas" style="height: 170vh!important;">
+      <section class="gradient-custom pt-3" id="register-canvas" style="height: 170vh!important;">
         <div class="container py-5 h-50">
           <div class="row d-flex justify-content-center align-items-center h-100">
             <div class="col-12 col-lg-9 col-xl-7">
               <!-- <div class="col-12 col-md-8 col-lg-6 col-xl-5"></div> -->
               <div class="card bg-dark shadow-2-strong" style="margin-top: -40px; border-radius:1rem; border-color: #ffc107;">
                 <div class="card-body p-4 p-md-5" style="margin: -20px;">
-                  <h3 class="mt-2 mb-0 pb-2 pb-md-0 mb-md-5 font-color align-items-center text-white text-center">
-                    Registration Form</h3>
+                  <h3 class="mt-0 mb-0 pb-2 pb-md-0 mb-md-5 font-color align-items-center text-white text-center">
+                    Profile</h3>
                   <form>
 
                     <div class="row m-1">
@@ -142,7 +140,7 @@
 
                         <div class="form-outline">
                           <input type="text" id="firstName" class="form-control form-control-lg font-color"
-                            placeholder="First Name" required />
+                            placeholder="First Name" required disabled/>
                           <!-- <label class="form-label" for="firstName">First Name</label> -->
                         </div>
 
@@ -151,7 +149,7 @@
 
                         <div class="form-outline">
                           <input type="text" id="lastName" class="form-control form-control-lg font-color"
-                            placeholder="Last Name" required />
+                            placeholder="Last Name" required disabled/>
                           <!-- <label class="form-label" for="lastName">Last Name</label> -->
                         </div>
 
@@ -165,7 +163,7 @@
                         <div class="form-outline datepicker w-100">
                           <label for="birthdayDate" class="form-label text-white"><strong>Birthday</strong></label>
                           <input type="date" class="form-control form-control-lg font-color font-color"
-                            id="birthdayDate" required />
+                            id="birthdayDate" required disabled/>
 
                         </div>
 
@@ -176,19 +174,19 @@
 
                         <div class="form-check form-check-inline">
                           <input class="form-check-input font-color" type="radio" name="inlineRadioOptions"
-                            id="femaleGender" value="option1"  required/>
+                            id="femaleGender" value="option1" required disabled/>
                           <label class="form-check-label font-color text-white" for="femaleGender">Female</label>
                         </div>
 
                         <div class="form-check form-check-inline">
                           <input class="form-check-input font-color" type="radio" name="inlineRadioOptions"
-                            id="maleGender" value="option2" />
+                            id="maleGender" value="option2" disabled/>
                           <label class="form-check-label font-color text-white" for="maleGender">Male</label>
                         </div>
 
                         <div class="form-check form-check-inline">
                           <input class="form-check-input font-color" type="radio" name="inlineRadioOptions"
-                            id="otherGender" value="option3" />
+                            id="otherGender" value="option3" disabled/>
                           <label class="form-check-label font-color text-white" for="otherGender">Other</label>
                         </div>
 
@@ -200,7 +198,7 @@
 
                         <div class="form-outline">
                           <input type="email" id="emailAddress" class="form-control form-control-lg font-color"
-                            placeholder="Email" required />
+                            placeholder="Email" required disabled/>
                           <!-- <label class="form-label" for="emailAddress">Email</label> -->
                         </div>
 
@@ -209,7 +207,7 @@
 
                         <div class="form-outline">
                           <input type="tel" id="phoneNumber" class="form-control form-control-lg font-color"
-                            placeholder="Phone Number" required />
+                            placeholder="Phone Number" required disabled/>
                           <!-- <label class="form-label" for="phoneNumber">Phone Number</label> -->
                         </div>
 
@@ -219,7 +217,7 @@
                     <div class="row m-1">
                       <div class="col-12">
 
-                        <select class="select form-control-lg font-color" required>
+                        <select class="select form-control-lg font-color" id="userType" required disabled>
                           <option value="1">None</option>
                           <option value="2">Job-seeker</option>
                           <option value="3">Job-provider</option>
@@ -227,7 +225,7 @@
                         </select>
                         <label class="form-label select-label font-color text-white">Choose user type</label>
 
-                      </div>
+                      </div>c
                     </div>
                     <br>
                     <div class="row m-1">
@@ -235,27 +233,38 @@
 
                         <div class="form-outline">
                           <input type="password" id="password" class="form-control form-control-lg font-color"
-                            placeholder="Password" required />
-                          <!-- <label class="form-label" for="emailAddress">Email</label> -->
+                            placeholder="Password" required disabled/>
                         </div>
 
                       </div>
                       <div class="col-md-6 mb-4 pb-2">
 
                         <div class="form-outline">
-                          <input type="password" id="password" class="form-control form-control-lg font-color"
-                            placeholder="Confirm Password" required />
-                          <!-- <label class="form-label" for="phoneNumber">Phone Number</label> -->
+                          <input type="password" id="cpassword" class="form-control form-control-lg font-color"
+                            placeholder="Confirm Password" required disabled/>
                         </div>
 
                       </div>
                     </div>
 
-                    <div class="mt-4 pt-2 text-center">
-                      <input class="btn btn-warning btn-lg px-5" id="submit-btn" type="submit" value="Submit" />
+                    <!-- <div class="mt-4 pt-2 text-center">
+                      <input class="btn btn-warning btn-lg px-5" id="edit-btn" type="submit" value="Edit" onclick="edit()"/>
                     </div>
 
-                    <div>
+                    <div class="mt-4 pt-2 text-center">
+                        <input class="btn btn-warning btn-lg px-5" id="submit-btn" type="submit" value="Submit" onclick="submit()"/>
+                      </div>
+                    <div> -->
+
+                    <div class="d-flex flex-row bd-highlight mb-4 justify-content-between mx-3">
+                        <div class="p-0 bd-highlight">
+                            <input class="btn btn-warning btn-lg px-5" id="edit-btn" type="submit" value="Edit" onclick="edit()"/>
+                        </div>
+                        <!-- <div style="width: 30px;"></div> -->
+                        <div class="p-0 bd-highlight">
+                            <input class="btn btn-warning btn-lg px-4" id="s-btn" type="submit" value="Submit" onclick="submit()"/>
+                        </div>
+                    </div>
                       <p class="mb-0 text-white text-center">Already have an account? <a href="flogin.html"
                           class="fw-bold">Login here!</a></p>
                     </div>
@@ -310,5 +319,23 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+        function edit(){
+          if(confirm("Do you want to edit your Information?")){
+            document.getElementById("firstName").disabled = "";
+            document.getElementById("lastName").disabled = "";
+            document.getElementById("birthdayDate").disabled = "";
+            document.getElementById("femaleGender").disabled = "";
+            document.getElementById("maleGender").disabled = "";
+            document.getElementById("otherGender").disabled = "";
+            document.getElementById("emailAddress").disabled = "";
+            document.getElementById("phoneNumber").disabled = "";
+            document.getElementById("userType").disabled = "";
+            document.getElementById("password").disabled = "";
+            document.getElementById("cpassword").disabled = "";
+          }
+        }
+    </script>
   </body>
 </html>

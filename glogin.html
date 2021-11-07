@@ -84,8 +84,6 @@
                   </form>
                   <!-- Search Box End -->
 
-                  <div style="margin-left: 180px;"></div>
-                  
                   <ul
                     class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end"
                   >
@@ -105,7 +103,7 @@
                         ><strong class="btn btn-outline-warning">Login</strong></a
                       >
                     </li>
-                    <li class="nav-item"> 
+                    <li class="nav-item" float-right>
                       <a id="custom-nav" class="nav-link" href="fregister.html"
                         ><strong class="btn btn-outline-warning">Register</strong></a
                       >
@@ -142,20 +140,20 @@
                         <h2 class="fw-bold mb-2 text-uppercase">Login</h2>
                         <p class="text-white-60 mb-5">Please enter your login credentials!</p>
                         
-                        <form action="" name="myForm" onsubmit="validateForm()" method="post"><!--ge, it onsubmit it means if the return value comes true then only the form will get submit-->
+                        <form name="myForm" action="" method="POST" onsubmit="validate11_form()">
                         <div class="form-outline form-white mb-4">
                        
-                            <input type="email" name="femail" id="typeEmailX" placeholder="Email" class="form-control form-control-lg" required/><!--ge-->
+                            <input type="email" name="femail" id="typeEmailX" placeholder="Email" class="form-control form-control-lg" class="validationssss" required maxlength="30"/><!--ge-->
                                  <!-- <label class="form-label" for="typeEmailX">Email</label> -->
                            
                                  <b></b><span class="form_error"> </span></b><!--ge-->
                         </div>
           
                         <div class="form-outline form-white mb-4">
-                          <input type="password" name="fpass" id="typePasswordX" placeholder="Password" class="form-control form-control-lg" required/><!--ge-->
+                          <input type="password" name="fpass" id="typePasswordX" placeholder="Password" class="form-control form-control-lg" required class="validationssss"  maxlength="8"/><!--ge-->
                           <!-- <label class="form-label" for="typePasswordX">Password</label> -->
                          
-                          <b><span class="form_error"></span></b><!--ge-->
+                         
                         </div>
           
                         <p class="small mb-5 pb-lg-2"><a class="text-white-50" href="#!">Forgot password?</a></p>
@@ -179,7 +177,7 @@
                       <div class="login-margin-down"></div>
 
                       <div>
-                        <p class="mt-5">Don't have an account? <a href="fregister.html" class="text-white-50 fw-bold">Sign Up</a></p>
+                        <p class="mb-0">Don't have an account? <a href="fregister.html" class="text-white-50 fw-bold">Sign Up</a></p>
                       </div>
           
                     </div>
@@ -199,9 +197,9 @@
   <div class="container">
 
     <!-- Call to action -->
-    <ul class="list-unstyled list-inline text-center py-2">
+    <ul class="list-unstyled list-inline text-center py-2>
       <li class="list-inline-item">
-        <h5 class="mb-5 text-light">Register for free</h5>
+        <h5 class="mb-1 text-light">Register for free</h5>
       </li><br>
       <li class="list-inline-item">
         <a href="fregister.html" class="btn btn-outline-light">Sign up!</a>
@@ -229,6 +227,10 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
+    ></script>
+    <script
+    type="text/javascript"
+      src="flogin.js" 
     ></script>
   </body>
 </html>
