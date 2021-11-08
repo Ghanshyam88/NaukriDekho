@@ -166,9 +166,11 @@
                       Post a Job
                     </h2>
 
-                    <form>
-                      <div class="form-outline mb-3">
+                    <form name="post_form" action="" method="POST" onsubmit="validate_post()">
+
+                      <div class="form-outline mb-3" id="error">
                         <input
+                        name="jobtitle"
                           type="text"
                           id="form3Example1cg"
                           class="form-control form-control-lg"
@@ -179,6 +181,7 @@
 
                       <div class="form-outline mb-3">
                         <input
+                        name="profession_1"
                           type="text"
                           id="form3Example4cg"
                           class="form-control form-control-lg"
@@ -193,6 +196,7 @@
 
                       <div class="form-outline mb-3">
                         <input
+                        name="duration_1"
                           type="text"
                           id="form3Example4cdg"
                           class="form-control form-control-lg"
@@ -203,6 +207,7 @@
 
                       <div class="form-outline mb-3">
                         <input
+                        name="price"
                           type="text"
                           id="form3Example4cdg"
                           class="form-control form-control-lg"
@@ -214,6 +219,7 @@
                       <div class="form-outline mb-3">
                         <input
                           type="text"
+                          name="phone_no"
                           id="form3Example4cdg"
                           class="form-control form-control-lg"
                           placeholder="Contact No."
@@ -224,6 +230,7 @@
                       <div class="form-outline mb-3">
                         <input
                           type="text"
+                          name="location"
                           id="form3Example3cg"
                           class="form-control form-control-lg"
                           placeholder="Address"
@@ -304,6 +311,11 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
-    <script src="geeta/fpost.js"></script>
+
+    <script 
+    type="text/javascript"
+    src="fpost.js">
+    </script>
+    
   </body>
 </html>
